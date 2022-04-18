@@ -17,6 +17,10 @@
     nav {
         margin-left: 112px;
         margin-right: auto;
+
+        ul {
+            list-style: none;
+        }
     }
 }
 
@@ -25,20 +29,92 @@
     align-items: center;
     column-gap: 34px;
 
-    li {
-        display: flex;
-        align-items: center;
+    > li {
+        position: relative;
 
-        font-size: 0.875rem;
-        line-height: 1.25rem;
-        font-weight: 500;
+        span{
+            display: flex;
+            align-items: center;
 
-        svg {
-            width: 10px;
-            height: auto;
-            opacity: 0.6;
+            user-select: none;
 
-            margin-left: 14px;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            font-weight: 500;
+
+            position: relative;
+
+            svg {
+                width: 10px;
+                height: auto;
+                opacity: 0.6;
+
+                margin-left: 14px;
+                transition: transform .4s;
+            }
+        }
+
+        &.active {
+            span svg {
+                transform: rotate(-180deg);
+            }
+            
+            ul {
+                max-height: 220px;
+            }
+        }
+    }
+}
+
+.dropdown {
+    position: absolute;
+    top: 32px;
+    left: 0;
+
+    width: 200px;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.8);
+
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    transition: all .4s;
+}
+
+.dropdown__item {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+
+    position: relative;
+
+    &::before {
+        content: '';
+
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        transform-origin: right;
+        transform: scaleX(0);
+        background: rgba(255, 255, 255, 0.2);
+
+        transition: transform .3s;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        &::before {
+            transform: scaleX(1);
+            transform-origin: left;
+            transition: transform .5s;
         }
     }
 }
@@ -61,14 +137,25 @@
         height: 42px;
         border-radius: 4px;
 
+        transition: 0.4s all;
+
         &:first-child {
             border: 1px solid var(--primary);
             background: transparent;
+
+            &:hover {
+                color: var(--link);
+                background: var(--primary);
+            }
         }
 
         &:last-child {
             border: none;
             background: var(--link);
+
+            &:hover {
+                filter: brightness(0.90);
+            }
         }
     }
 }
