@@ -9,7 +9,7 @@
 
 .content {
     width: 100%;
-    max-width: 1024px;
+    max-width: 1266px;
 
     display: flex;
     align-items: center;
@@ -154,7 +154,7 @@
             background: var(--link);
 
             &:hover {
-                filter: brightness(0.90);
+                filter: brightness(0.85);
             }
         }
     }
