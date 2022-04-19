@@ -4,7 +4,7 @@ import IconBattleNet from './icons/battlenet.svg'
 // import IconBuy from './icons/buy.svg'
 // import IconCheckGroup from './icons/check-group.svg'
 // import IconSmartPhone from './icons/smart-phone.svg'
-// import IconLink from './icons/link.svg'
+import IconLink from './icons/link.svg'
 import IconNintendo from './icons/nintendo.svg'
 import IconPlay from './icons/play.svg'
 import IconPlaystation from './icons/playstation.svg'
@@ -20,7 +20,7 @@ export {
   //   IconBuy,
   //   IconCheckGroup,
   //   IconSmartPhone,
-  //   IconLink,
+  IconLink,
   IconNintendo,
   IconPlay,
   IconPlaystation,
