@@ -1,0 +1,67 @@
+[
+    {
+        "name": "Diablo II: Ressurected",
+        "category": "RPG de ação",
+        "image": "/games/game-1.png"
+    },
+
+    {
+        "name": "Overwatch",
+        "category": "Ação em equipe",
+        "image": "/games/game-2.png"
+    },
+
+    {
+        "name": "Overwatch 2",
+        "category": "Ação em equipe",
+        "image": "/games/game-3.png"
+    },
+    
+    {
+        "name": "World of Warcraft Classic",
+        "category": "RPG multijogador em massa",
+        "image": "/games/game-4.png"
+    },
+    
+    {
+        "name": "Heathstone",
+        "category": "Jogo de cards estratégicos",
+        "image": "/games/game-5.png"
+    },
+    
+    {
+        "name": "Heroes of the Storm",
+        "category": "MOBA",
+        "image": "/games/game-6.png"
+    },
+
+    {
+        "name": "Diablo IV",
+        "category": "RPG de ação",
+        "image": "/games/game-7.png"
+    },
+
+    {
+        "name": "Warcraft III Reforged",
+        "category": "Estratégia em tempo real",
+        "image": "/games/game-8.png"
+    },
+
+    {
+        "name": "Diablo III",
+        "category": "RPG de ação",
+        "image": "/games/game-9.png"
+    },
+
+    {
+        "name": "StarCraft II",
+        "category": "Estratégia em tempo real",
+        "image": "/games/game-10.png"
+    },
+
+    {
+        "name": "StarCraft Remastered",
+        "category": "Estratégia em tempo real",
+        "image": "/games/game-11.png"
+    }
+]

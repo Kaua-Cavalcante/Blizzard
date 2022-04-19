@@ -8,11 +8,11 @@ export const Banner = () => (
       <Header />
       <div className={styles.information}>
         <div className={styles.information__images}>
-          <img src="/games/diablo.png" alt="diablo" />
-          <img src="/games/hearthstone.png" alt="hearthstone" />
-          <img src="/games/wow.png" alt="world of warcraft" />
-          <img src="/games/diablo1.png" alt="diablo immortal" />
-          <img src="/games/starcraft.png" alt="starcraft" />
+          <img src="/logo-games/diablo.png" alt="diablo" />
+          <img src="/logo-games/hearthstone.png" alt="hearthstone" />
+          <img src="/logo-games/wow.png" alt="world of warcraft" />
+          <img src="/logo-games/diablo1.png" alt="diablo immortal" />
+          <img src="/logo-games/starcraft.png" alt="starcraft" />
         </div>
 
         <div className={styles.information__text}>

@@ -7,6 +7,7 @@ import {
 } from 'static'
 import Link from 'next/link'
 import styles from './styles.module.scss'
+import games from '../../data/games.json'
 
 export const Games = () => (
   <section className={styles.container}>
@@ -28,6 +29,18 @@ export const Games = () => (
             Ver todos os jogos
           </a>
         </Link>
+      </div>
+
+      <div className={styles.games}>
+        {games.map(game => (
+          <div className={styles.game} key={game.name}>
+            <span>
+              <img src={game.image} alt={`Imagem do jogo ${game.name}`} />
+            </span>
+            <strong>{game.name}</strong>
+            <p>{game.category}</p>
+          </div>
+        ))}
       </div>
     </div>
   </section>
