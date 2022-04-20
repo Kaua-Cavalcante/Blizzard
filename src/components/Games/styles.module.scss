@@ -93,6 +93,7 @@
         img {
             width: 100%;
             height: 100%;
+            border-radius: 4px;
 
             object-fit: cover;
         }
@@ -111,5 +112,39 @@
         font-size: 1rem;
         line-height: 1.375rem;
         color: var(--tertiary);
+    }
+}
+
+.more-games {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 36px;
+
+    max-height: 422px;
+
+    border: 1px solid #212428;
+    border-radius: 4px;
+
+    img {
+        width: 94px;
+        height: auto;
+    }
+
+    a {
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+
+        font-size: 1.125rem;
+        line-height: 1.625rem;
+        font-weight: 600;
+
+        svg {
+            color: #C4C4C4;
+            width: 10px;
+            height: 10px;
+        }
     }
 }

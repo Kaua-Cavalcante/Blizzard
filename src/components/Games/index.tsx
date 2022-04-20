@@ -3,7 +3,8 @@ import {
   IconNintendo,
   IconPlaystation,
   IconXbox,
-  IconLink
+  IconLink,
+  IconPoints
 } from 'static'
 import Link from 'next/link'
 import styles from './styles.module.scss'
@@ -41,6 +42,13 @@ export const Games = () => (
             <p>{game.category}</p>
           </div>
         ))}
+        <div className={styles['more-games']}>
+          <img src="/logo.png" alt="Logo da Blizzard" />
+          <a href="">
+            <IconPoints />
+            Ver todos os jogos
+          </a>
+        </div>
       </div>
     </div>
   </section>
