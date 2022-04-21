@@ -92,10 +92,16 @@
         line-height: 1.5rem;
         font-weight: 600;
 
+        transition: filter .3s;
+
         svg {
             width: 20px;
             height: auto;
             color: var(--primary);
+        }
+
+        &:hover {
+            filter: brightness(0.85);
         }
     }
 
