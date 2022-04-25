@@ -21,6 +21,7 @@ const ESPORTS = [
 type NavItemsProps = 'games' | 'esports' | ''
 
 export const Header = () => {
+  const [toggleActive, setToggleActive] = useState<boolean>(false)
   const [activeNavItem, setActiveNavItem] = useState<NavItemsProps>('')
 
   const handleActiveNavItem = (navItemKey: NavItemsProps): void => {
@@ -69,6 +70,17 @@ export const Header = () => {
           <button type="button">Criar conta</button>
           <button type="button">Logar</button>
         </div>
+
+        <button
+          className={`${styles.menu__toggle} ${
+            toggleActive ? styles.active : ''
+          }`}
+          onClick={() => setToggleActive(state => !state)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </div>
     </header>
   )
