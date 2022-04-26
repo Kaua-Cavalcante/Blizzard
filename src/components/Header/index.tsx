@@ -34,7 +34,7 @@ export const Header = () => {
       <div className={styles.content}>
         <img src="/logo.png" alt="Logo da Blizzard" />
 
-        <nav>
+        <nav className={toggleActive ? styles.active : ''}>
           <ul className={styles.navigation}>
             <li className={activeNavItem === 'games' ? styles.active : ''}>
               <span onClick={() => handleActiveNavItem('games')}>
@@ -51,18 +51,25 @@ export const Header = () => {
             <li className={activeNavItem === 'esports' ? styles.active : ''}>
               <span onClick={() => handleActiveNavItem('esports')}>
                 Esports <IconArrowDown />
-                <ul className={styles.dropdown}>
-                  {ESPORTS.map(esport => (
-                    <li key={esport} className={styles.dropdown__item}>
-                      {esport}
-                    </li>
-                  ))}
-                </ul>
               </span>
+
+              <ul className={styles.dropdown}>
+                {ESPORTS.map(esport => (
+                  <li key={esport} className={styles.dropdown__item}>
+                    {esport}
+                  </li>
+                ))}
+              </ul>
             </li>
-            <li>Loja</li>
-            <li>Notícias</li>
-            <li>Suporte</li>
+            <li>
+              <span>Loja</span>
+            </li>
+            <li>
+              <span>Notícias</span>
+            </li>
+            <li>
+              <span>Suporte</span>
+            </li>
           </ul>
         </nav>
 
